@@ -10,8 +10,8 @@
             <column name="EMPID" type="varchar(15)" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="FIRST NAME" type="varchar(31)"/>
-            <column name="LAST NAME" type="varchar(30)">
+            <column name="FIRST_NAME" type="varchar(31)"/>
+            <column name="LAST_NAME" type="varchar(30)">
                 <!--<constraints nullable="false"/>-->
             </column>
         </createTable>
