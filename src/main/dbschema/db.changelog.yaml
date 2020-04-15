@@ -1,0 +1,19 @@
+databaseChangeLog:
+- changeSet:
+    id: vvsrs-01
+    author: vvsrs1
+    changes:
+    - createTable:
+        tableName: EMPLOYEE
+        columns:
+          - column:
+              name: EMP_ID
+              type: varchar(13)
+              constraints:
+                primaryKey: true
+          - column:
+              name: FIRST_NAME
+              type: varchar(20)
+          - column:
+              name: LAST_NAME
+              type: varchar(20)

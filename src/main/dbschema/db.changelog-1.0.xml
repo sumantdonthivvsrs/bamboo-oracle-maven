@@ -7,7 +7,7 @@
     
     <changeSet id="id-vvsrs-emp" author="vvsrs-emp">
         <createTable tableName="Employee">
-            <column name="EMPID" type="varchar(15)" autoIncrement="false">
+            <column name="EMP_ID" type="varchar(15)" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="FIRST_NAME" type="varchar(31)"/>
