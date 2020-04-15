@@ -5,18 +5,15 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
     
-    <changeSet id="id-vvsrs-prop" author="vvsrs-prop">
-        <createTable tableName="MEDIA">
-            <column name="UUID" type="varchar(255)" autoIncrement="false">
+    <changeSet id="id-vvsrs-emp" author="vvsrs-emp">
+        <createTable tableName="Employee">
+            <column name="EMPID" type="varchar(15)" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="DTYPE" type="varchar(31)"/>
-            <column name="FILENAME" type="varchar(255)">
+            <column name="FIRST NAME" type="varchar(31)"/>
+            <column name="LAST NAME" type="varchar(30)">
                 <!--<constraints nullable="false"/>-->
             </column>
-            <column name="MIME_TYPE" type="varchar(50)"/>
-            <column name="OWNER" type="varchar(255)"/>
-            <column name="VISIBILITY" type="varchar(50)"/>
         </createTable>
     </changeSet>
 
