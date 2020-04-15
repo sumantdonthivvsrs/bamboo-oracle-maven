@@ -1,0 +1,3 @@
+databaseChangeLog:
+  - include:
+      file: src/resources/dbschema/db.changelog-1.0.yaml
