@@ -72,7 +72,7 @@
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-maven-plugin</artifactId>
                 <version>3.0.7</version>
-                <executions>
+               <!-- <executions>
                     <execution>
                         <phase>process-resources</phase>
                         <configuration>
@@ -82,7 +82,7 @@
                             <goal>update</goal>
                         </goals>
                     </execution>
-                </executions>
+                </executions>-->
             </plugin>
         </plugins>
     </build>
