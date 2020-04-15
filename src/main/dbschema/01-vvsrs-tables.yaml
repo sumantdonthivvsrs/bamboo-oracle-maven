@@ -1,0 +1,54 @@
+databaseChangeLog:
+- changeSet:
+    id: vvsrs-01
+    author: vvsrs1
+    objectQuotingStrategy: QUOTE_ALL_OBJECTS
+    changes:
+    - createTable:
+        tableName: ACCUITY_BANK_VVSRS
+        columns:
+          - column:
+              name: INSTITUTION_IDENTIFIER
+              type: varchar(8)
+              constraints:
+                primaryKey: true
+              remarks:
+                a sequentially assigned number that identifies an institution within a city or state
+          - column:
+              name: INSTITUTION_FULL_NAME
+              type: varchar(256)
+              constraints:
+                nullable: false
+              remarks:
+                institution full legal title
+          - column:
+              name: INSTITUTION_SHORT_NAME
+              type: varchar(50)
+              constraints:
+                nullable: false
+              remarks:
+                institution name abbreviated
+          - column:
+              name: DATE_CREATED
+              type: TIMESTAMP(6) WITH TIME ZONE
+              defaultValueComputed: SYSTIMESTAMP
+              constraints:
+                nullable: false
+          - column:
+              name: DATE_MODIFIED
+              type: TIMESTAMP(6) WITH TIME ZONE
+              defaultValueComputed: SYSTIMESTAMP
+              constraints:
+                nullable: false
+          - column:
+              name: CREATED_BY
+              type: VARCHAR2(50)
+              defaultValueComputed: USER
+              remarks:
+                datacenter specific user id
+          - column:
+              name: UPDATED_BY
+              type: VARCHAR2(50)
+              defaultValueComputed: USER
+              remarks:
+                datacenter specific user id
