@@ -1,0 +1,3 @@
+databaseChangeLog:
+  - include:
+      file: dbschema/changesets/01-vvsrs-tables.yaml
